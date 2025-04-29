@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Awwwards-Winning-Website-main/Awwwards-Winning-Website-main/videos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Gaming-Website",
+		"liveServer.settings.port": 5501
+	}
+}

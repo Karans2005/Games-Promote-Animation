@@ -1,0 +1,732 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+.container2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Header for Code */
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+    z-index: 999;
+    background-color: #4b4b4b5b;
+    backdrop-filter: blur(10px);
+}
+
+/* Left Head  */
+.head-left{
+    display: flex;
+    align-items: center;
+}
+
+.head-left a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+/* Logo & Btn size */
+.head-left img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.head-left a{
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: 547;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: large;
+    text-decoration: none;
+    background-color: white;
+    color: #000000;
+}
+
+/* Btn in hover  */
+.head-left a:hover{
+    opacity: 0.7;
+}
+
+/* search input  */
+.searchForm .search-box{
+   border-radius: 30px;
+   height: 40px;
+}
+
+.searchForm .search-box:focus{
+    border:2px solid #525fd1;
+    color: #525fd1;
+ }
+ .searchForm .search-box:hover{
+    border:2px solid #525fd1;
+    color:#525fd1;
+ }
+ 
+ 
+
+/* Right Head  */
+.navbar a {
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a:hover{
+    color:blue;
+    border-bottom:.1rem solid blue;
+    padding: .5rem;  
+    transition-duration: 0.8s;
+}
+.toggle-btn {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+/* Btn in line hide use padding and other  */
+
+
+/* Hero section code  */
+.hero-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Hero-vid */
+.hero-vid{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ 
+/* video fully cover in section  */
+.hero-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hero info */
+.hero-info{
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+/* Hero info change h1,p,btn  */
+.hero-info h1{
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-info p{
+    color: white;
+    max-width: 210px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.hero-info button{
+    background-color: #edff66;
+    border: 2px solid #edff66;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+}
+
+/* btn in hover  */
+.hero-info button:hover{
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 15px #edff66;
+}
+
+/* Gaming heading ke liye. */
+.gaming-text{
+    color: white;
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+/* Btn from div  */
+.next-btn{
+    width: 200px;
+    height: 200px;
+    background-color: #edff66b6;
+    position: absolute;
+    left: 45%;
+    bottom: 45%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.5s; /*connected to hover */ 
+}
+
+/* Btn for hover */
+.next-btn:hover{
+   width: 200px;
+   height: 200px;
+   opacity: 1;
+   box-shadow: 0 0 15px rgba(255,255 , 255, 0.616);
+}
+
+/* About Section  */
+.about-section{
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* image in code  */
+.image-box{
+    width: 360px;
+    height: 510px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+/* img sizes changing */
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About section content  */
+
+.about-section p{
+    font-size: 12px;
+}
+
+.about-section h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    max-width: 1150px;
+    text-align: center;
+    margin: 25px 0;
+    text-transform: uppercase;
+    /* background: linear-gradient(to right,#4acfee,#53f8c9,#02d79a,#6070fd,2a46ff,#0099ff,#4acfee); not work because high quanity colour not exist so use... */
+    background:linear-gradient(to right,#5ebbd0,#53f8c9,#6ddabb,#525fd1);
+    background-size: 200%;
+    background-clip: text;
+    /* dout */
+    /* animation: uses */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
+
+.about-section h4{
+    margin-top: 50px;
+    margin-bottom: 0;    
+}
+
+.about-section h5{
+    margin-top: 5px;
+    color: gray;
+    max-width: 425px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* Info section  */
+.info-section{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    left: 100px;
+
+
+    width: 80%;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+/* info section content  */
+.info-section h3,h1{
+    margin-bottom: 0;
+    color: white;
+}
+
+.info-section p{
+    margin-top: 5px;
+    color: gray;
+    max-width: 400px;
+    line-height: 25px;
+}
+
+/* cards */
+.info-cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;   
+    position: relative;     
+}
+
+/* card1 ,card2... */
+.card{
+    position: relative;
+    width: auto;
+    height: 40vh;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+/* card content  */
+.card h1{
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    z-index: 1;
+    background:linear-gradient(to right,#5ebbd0,#53f8c9,#6ddabb,#525fd1);
+    background-size: 200%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+} 
+
+.card p{
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    z-index: 1;
+    max-width: 250px;
+    color: lightgray;
+}
+
+.card video{
+    width: 100%;
+    height: 100%;
+    /* cover ke liye  */
+    object-fit: cover;
+}
+
+/* buttons */
+.card button{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding: 10px 25px;
+    border: 1px solid gray;
+    background-color: #0f1217;
+    color: gray;
+    border-radius: 20px;
+    box-shadow: 0 0 5px lightgray;
+    cursor: pointer;
+    transition: 0.3s; /*hover use*/
+}
+
+/* hover use btn and card  */
+.card button:hover{
+    box-shadow: 0 0 15px lightgray;
+    opacity: 0.7;
+}
+
+.card:hover{
+    box-shadow: 0 0 15px rgb(211, 211, 211);
+}
+
+/*card use in nth-child() */
+.card:nth-child(1){
+    grid-column: span 2;
+}
+
+.card:nth-child(2){
+    grid-row: span 2;
+    height: 83vh;
+}
+
+/* contact section  */
+.contact-section{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* .contact-section image  design by clip-path*/
+.contact-section .img1{
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    height: 400px;
+    clip-path: polygon(32% 0%,95% 0% ,74% 100%, 0% 100%);
+}
+
+.contact-section .img2{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    height: 200px;
+    clip-path: polygon(32% 6%,75% 0% ,100% 50%,75% 100%, 36% 95%,8% 49%);
+
+}
+
+.contact-section .img3{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    height: 250px;
+    width: 250px;
+    clip-path: polygon(52% 5%, 100% 38% ,82% 100%, 34% 93%, 0% 38%);
+
+} 
+
+/* .contact-section content design */
+.contact-section p{
+    margin-top: 100px;
+}
+
+.contact-section h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    max-width: 550px;
+    text-align: center;
+    margin-bottom: 50px;
+    background:linear-gradient(to right,#5ebbd0,#53f8c9,#6ddabb,#525fd1);
+    background-size: 200%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+.contact-section button{
+
+    padding: 10px 25px;
+    border: 1px solid gray;
+    background-color: #0f1217;
+    color: gray;
+    border-radius: 20px;
+    box-shadow: 0 0 5px lightgray;
+    cursor: pointer;
+    transition: 0.3s; /*hover use*/
+}
+
+.contact-section button:hover{
+    box-shadow: 0 0 15px lightgray;
+    opacity: 0.7;
+}
+
+/* Footer section  */
+.footer{
+width: 100%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgba(211, 211, 211,0.21);
+height: 100px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footer p{
+    color: white;
+    margin: 0 20px;    
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    margin-right: 140px;
+}
+
+.footer li{
+    color: white;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 7px;
+    border-radius: 50px;
+    border: 1px solid rgb(0,130,211);
+    margin: 0 10px;
+}
+
+/* Blur Effact Animation in Heading and other */
+
+.stones-img{
+    position: absolute;
+    margin-top: 22%;
+    width: 500px;
+}
+
+/* last stones uses  */
+.autoBlur{
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    40%,60%{
+        filter: blur(0);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(40px);
+        transform: translate(-200px);
+        opacity: 0;
+    }
+}
+
+/* Take Full Screen Animation in AboutSec*/
+
+.autoTakeFull{
+    animation: autoTakeFullAnimation  both;
+    animation-timeline: view(70% 65%); 
+    /* note:not use comma (a%,b%) */
+}
+
+@keyframes autoTakeFullAnimation{
+    to{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        margin-bottom: 100px;
+    }
+}
+
+/* Auto Display Animation */
+
+.autoDisplay{
+    animation: autoDisplayAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoDisplayAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+
+    }
+}
+
+/* Use in MEDIA  */
+
+@media screen and (max-width:940px){
+    header{
+    padding: 8px 10px;
+    }
+    .head-left a{
+        font-size: 13px;
+    }
+    
+    /* head-right for toggle btn code  */
+  .nav-links {
+    display: none;
+    font-size: 12px;
+     padding: 0 5px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 42px;
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .toggle-btn {
+    display: block;
+    color: white;
+  }
+  .toggle-btn:hover {
+    color: #525fd1;
+  }
+/* /// */
+
+/* search input  */
+.searchForm .search-box{
+    border-radius: 30px;
+    height: 30px;
+ }
+ 
+ /* hero section. */
+
+    .hero-info{
+        left: 5%;
+    }
+    .hero-section h1{
+        font-size: 90px;
+    }
+    .next-btn{
+        left: 25%;
+        top: 40%;
+    }
+    .about-section{
+        margin: 0;
+    }
+    .about-section h1{
+        font-size: 50px;
+    }
+    .image-box{
+        width: 300px;
+        height: 300px;
+    }
+    .about-section h4,.about-section h5{
+        max-width: 350px;
+        text-align: center;
+    }
+    .info-section{
+        position: relative;
+        left: 49px;
+    }
+ 
+    .contact-section .img1{
+        width:150px;
+        height: 200px;
+        right: 0;
+        top: 20px;
+    }
+    .contact-section .img2{
+        top: 30px;
+        left: -40px;
+        width: 150px;
+        height: 180px;
+    }
+    .contact-section .img3{
+       left: -40px;
+       bottom: 0;
+       width: 150px;
+       height: 180px;
+    }
+    .contact-section h1{
+        font-size: 60px;
+        max-width:300px;
+    }
+    
+    .footer ul{
+        margin-left: 70px;
+    }
+    /* last stones use  */
+    .stones-img{
+        margin-top: 80%;
+        width: 400px;
+    }
+  .container header .search-form .search-box{
+        font-size: 0px;
+         height: 0px;
+    }
+}
+
+/* sceen 635px */
+@media (max-width:585px){
+   .footer{
+    display: grid;
+    align-items: center;
+    align-content: center;
+   }
+.footer a{
+    position: relative;
+    left: 130px;
+}
+}
+
+/* sceen 585px */
+
+
+/* screen 1267px */
+@media screen and (min-width:1267px){
+    .info-section{
+        position: relative;
+        left: 150px;
+    }
+}
+/* .footer .links a:hover{
+    background-color: white;
+} */
+
+
