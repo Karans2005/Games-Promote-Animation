@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Code line Header  -->
+        <header>
+            <div class="head-left">
+                <img src="logo.png" alt="logo">
+                <a href="https://poki.com">Products</a>
+            </div>
+
+       <!-- search button for input -->
+         <div class="searchForm">
+            <!-- <input type="search" class="search-box" placeholder="search games..." > -->
+            <!-- <button id="search-btn">search</button> -->
+         </div>
+
+         <!-- head right navbar. head-right = navbar -->
+         <nav class="navbar">
+
+            <ul class="nav-links" id="navLinks">
+                <p><a href="#home">HOME</a></p>
+                <p><a href="#about">ABOUT</a></p>
+                <p><a href="#services">SERVICES</a></p>
+                <p><a href="#contact">CONTACT</a></p>
+                <!-- <p><a href="#vault">VAULT</a></p> -->
+            </ul>
+        </nav>
+        <div class="toggle-btn" id="toggleBtn">
+          &#9776; <!-- Hamburger icon -->
+        </div>
+        </header>
+    </div>
+   
+    <!-- Code line Hero-Section  -->
+
+    <section class="hero-section autoBlur" id="home">
+        <!-- videos -->
+        <div class="hero-vid">
+            <video loop autoplay muted plays-inline class="hero-video">
+                <source src="hero-1.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-info">
+                <h1>REDEFINE</h1>
+                <p>Enter the metapage Layer Unleash the play Economy</p>
+                <button onclick="watchTrailer()">Watch Trailer</button>
+            </div>
+              
+            <h1 class="gaming-text">Gaming</h1>
+            <!-- Btn from div  -->
+            <div class="next-btn">
+                NEXT
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section  -->
+    <section class="about-section" id="about">
+        <p>Welcome to Zentry</p>
+        <div class="autoBlur">
+            <h1>DISCOVER THE WORLD LARGEST SHARED ADVENTURE</h1>
+        </div>
+        
+        <img src="stones.png" alt="stones-img" class="stones-img">
+        <div class="image-box autoTakeFull">
+            <img src="about.webp" alt="about-img">
+        </div>
+        <h4>Game of Games begins-your life, now an epic MMORPG</h4>
+        <h5>Zentry untes every player from countless games and platforms , both digital and physical, into a unified Play Economy</h5>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="services">
+        <!-- content -->
+        <h3>Into the Metagame Layer</h3>
+        <p>A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure.</p>
+        
+        <!-- Cards  -->
+        <div class="info-cards">
+            <!-- card - 1 -->
+            <div class="card autoDisplay">
+                <h1>ZIGMA</h1>
+                <p>An anime gaming-inspired NFT collection - the IP primed for expansion.</p>
+
+                <video src="feature-1.mp4" autoplay loop muted plays-inline ></video>
+                <button onclick="comingSoon1()">COMING SOON</button>
+            </div>
+            
+        <!-- card - 2 -->
+            <div class="card autoDisplay"> 
+                <h1 >NEXUS</h1>
+                <p>An anime gaming-inspired NFT collection - the IP primed for expansion.</p>
+
+                <video src="feature-2.mp4" autoplay loop muted plays-inline ></video>
+                <button onclick="comingSoon2()">COMING SOON</button>
+            </div>
+
+        <!-- card - 3 -->
+            <div class="card autoDisplay">
+                <h1>AZUL</h1>
+                <p>An anime gaming-inspired NFT collection - the IP primed for expansion.</p>
+
+                <video src="feature-3.mp4" autoplay loop muted plays-inline ></video>
+                <button onclick="comingSoon3()">COMING SOON</button>
+            </div>
+            
+        <!-- card - 4 -->
+            <div class="card autoDisplay">     
+                <h1>RADIANT</h1>
+                <p>An anime gaming-inspired NFT collection - the IP primed for expansion.</p>                
+              <video src="feature-4.mp4" autoplay loop muted plays-inline ></video>
+              <button onclick="comingSoon4()">COMING SOON</button>
+                </div>
+                
+        <!-- card - 5 -->
+             <div class="card autoDisplay">     
+                <h1></h1>
+                <p</p>
+
+              <video src="feature-5.mp4" autoplay loop muted plays-inline ></video>
+              <button onclick="comingSoon5()">COMING SOON</button>   
+            </div>
+                
+        <!-- card - 6 -->
+         <div class="card autoDisplay" onclick="comingSoon6()">
+            <h1>MORE COMING SOON</h1>
+         </div>
+            </div>       
+    </section>
+    
+    <!-- Contact Section  -->
+    <section class="contact-section" id="contact">
+        <p style="color: white;">Join Zentry</p>
+        <div class="autoBlur">
+            <h1>LET'S BUILD THE NEW ERA OF GAMING TOGETHER</h1>
+        </div>
+
+        <button onclick="contact()">CONTACT US</button>
+        <img class="img1" src="swordman.webp" alt="contact-img">
+        <img class="img2" src="contact-1.webp" alt="contact-img">
+        <img class="img3" src="contact-2.webp" alt="contact-img">
+
+    </section>
+
+    <!-- Footer Section  -->
+     <section class="footer" id="vault">
+        <p >Harsh 2025, All rights reserved</p>
+        <ul >
+            <li><a href="https://www.pinterest.com/" class="fab fa-pinterest"></a></li>
+            <li><a href="https://x.com/" class="fab fa-x"></a></li>
+            <li><a href="https://www.facebook.com/" class="fab fa-facebook"></a></li>
+            <li><a href="https://in.linkedin.com/" class="fab fa-linkedin"></a></li>
+        </ul>
+        <p>Privacy Policy</p>
+     </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
