@@ -492,39 +492,41 @@ header{
 }
 
 /* Footer section  */
+
 .footer{
-width: 100%;
-display:flex;
-align-items: center;
-justify-content: space-between;
-background-color: rgba(211, 211, 211,0.21);
-height: 100px;
-font-family: Arial, Helvetica, sans-serif;
-
+    background: rgb(56, 56, 56);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.footer p{
-    color: white;
-    margin: 0 20px;    
+.footer .share{
+    padding: 1rem 0;
 }
 
-.footer ul{
-    display: flex;
-    list-style: none;
-    margin-right: 140px;
+/* display flex not type. kyuki jab hum ise wrap karenge to koi fark nhi padega iske icon chhota hai . */
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border:2px solid black;
+    margin:.3rem;
+    border-radius: 50%;
 }
 
-.footer li{
-    color: white;
+.footer .share a:hover{
+    color:rgb(185, 185, 185);
+}
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
 }
 
-.footer a{
-    text-decoration: none;
-    color: white;
-    padding: 7px 7px;
-    border-radius: 50px;
-    border: 1px solid rgb(0,130,211);
-    margin: 0 10px;
+.footer .credit span{
+    color: rgb(236, 196, 120);
 }
 
 /* Blur Effact Animation in Heading and other */
@@ -640,7 +642,7 @@ font-family: Arial, Helvetica, sans-serif;
         left: 5%;
     }
     .hero-section h1{
-        font-size: 90px;
+        font-size: 80px;
     }
     .next-btn{
         left: 25%;
@@ -687,7 +689,11 @@ font-family: Arial, Helvetica, sans-serif;
         font-size: 60px;
         max-width:300px;
     }
-    
+    /* INFO SECTION 
+     */
+     .card h1{
+       font-size: 30px;
+    } 
     .footer ul{
         margin-left: 70px;
     }
@@ -702,20 +708,9 @@ font-family: Arial, Helvetica, sans-serif;
     }
 }
 
-/* sceen 635px */
-@media (max-width:585px){
-   .footer{
-    display: grid;
-    align-items: center;
-    align-content: center;
-   }
-.footer a{
-    position: relative;
-    left: 130px;
-}
-}
 
-/* sceen 585px */
+
+
 
 
 /* screen 1267px */

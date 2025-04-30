@@ -59,5 +59,5 @@ function comingSoon6(){
 // Contact section 
 
 function contact(){
-  window.open('http://127.0.0.1:5501/contact.html')
+  window.open('https://karans2005.github.io/Contact-Section/')
 }
