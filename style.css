@@ -68,7 +68,7 @@ header{
 }
 
 /* search input  */
-.searchForm .search-box{
+/* .searchForm .search-box{
    border-radius: 30px;
    height: 40px;
 }
@@ -80,8 +80,7 @@ header{
  .searchForm .search-box:hover{
     border:2px solid #525fd1;
     color:#525fd1;
- }
- 
+ } */
  
 
 /* Right Head  */
@@ -145,7 +144,7 @@ header{
 
 /* Hero info change h1,p,btn  */
 .hero-info h1{
-    font-size: 120px;
+    font-size: 110px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -496,7 +495,7 @@ header{
 .footer{
     background: rgb(56, 56, 56);
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer .share{
@@ -642,7 +641,7 @@ header{
         left: 5%;
     }
     .hero-section h1{
-        font-size: 80px;
+        font-size: 65px;
     }
     .next-btn{
         left: 25%;
@@ -702,16 +701,19 @@ header{
         margin-top: 80%;
         width: 400px;
     }
-  .container header .search-form .search-box{
+  /* .container header .search-form .search-box{
         font-size: 0px;
          height: 0px;
+    } */
+
+    .footer .share a{
+        font-size: 1rem;
+    }
+    
+    .footer .credit{
+        font-size: 1rem;
     }
 }
-
-
-
-
-
 
 /* screen 1267px */
 @media screen and (min-width:1267px){
