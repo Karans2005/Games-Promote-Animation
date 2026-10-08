@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/004/987/740/non_2x/logo-design-for-mobile-phone-joystick-games-vector.jpg">
+    <style>
+        *{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+/* all background difference and edition for use html */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+/* hamne isme scroll wale part ko edit background transparent and color,border radius bhi diya. */
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 5rem;
+}
+/* body background color */
+body{
+    background-color: black;
+}
+
+/* section */
+/* home section ke liye code because get yours button ko side karne ke liye  */
+section{
+    padding: 2rem 7%;
+}
+        
+.contact .row {
+    display: flex;
+    align-items: center;
+    background:black;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 60px;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #13131a;
+    border:.1rem solid rgba(255,255,255,.3);
+}
+
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left:2.5rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;  
+    /* icon clear show ke liye  */
+    border: none;  
+}
+
+.contact .row form .btn{
+    padding: 10px 25px;
+    border: 1px solid rgb(128, 128, 128);
+    background-color: #2d65b9;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(87, 154, 255);
+}
+
+.contact .row form .btn:hover{
+  background-color: rgb(54, 44, 44); 
+  color: white;
+}
+
+
+
+
+.contact .heading {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;   
+    background:linear-gradient(to right,#5ebbd0,#53f8c9,#6ddabb,#525fd1);
+    background-size: 200%;
+    background-clip: text;
+    /* dout */
+    /* animation: uses */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+    margin-top: 30px;
+}
+
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+}
+    </style>
+</head>
+<body>
+    
+<!-- contact section start  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading"><span>CONTACT</span> US </h1>
+
+    <div class="row">
+    <!-- map show  -->
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.532609591163!2d81.2794391257809!3d21.21071833150309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293db100d9ff83%3A0x1d6cf1aaa82ce0c1!2sJayanti%20Nagar%2C%20Akash%20Nagar%2C%20Durg%2C%20Chhattisgarh%20491001!5e0!3m2!1sen!2sin!4v1730043309463!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- form fill -->
+        <form >
+            <h3>get it touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Your Name">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Your Email">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="Your Number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+    </div>
+</section>
+</body>
+</html>
